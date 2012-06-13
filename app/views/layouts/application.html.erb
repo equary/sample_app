@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-<title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
-<%= csrf_meta_tag %> </head>
-<body>
-<%= yield %>
+	<title><%= title %></title>
+	<%= csrf_meta_tag %> 
+	<%= render 'layouts/_styleshetes' %>
+  </head>
+  <body>
+    <div class="container"> 
+		<header>
+			<%= render 'layouts/_header' %> 
+			<nav class="round">
+				<ul>
+					<li><%= link_to "Home", '#' %></li> 
+					<li><%= link_to "Help", '#' %></li> 
+					<li><%= link_to "Sign in", '#' %></li>
+				</ul> 
+			</nav>
+		</header>
+		<section class="round">
+			<%= yield %> 
+		</section>
+		<%= render 'layouts/_footer' %>
+	</div>
   </body>
 </html>
