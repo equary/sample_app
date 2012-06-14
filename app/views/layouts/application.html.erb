@@ -3,24 +3,17 @@
   <head>
 	<title><%= title %></title>
 	<%= csrf_meta_tag %> 
-	<%= render 'layouts/_styleshetes' %>
+	<%= render 'layouts/stylesheets' %>
   </head>
   <body>
     <div class="container"> 
 		<header>
-			<%= render 'layouts/_header' %> 
-			<nav class="round">
-				<ul>
-					<li><%= link_to "Home", '#' %></li> 
-					<li><%= link_to "Help", '#' %></li> 
-					<li><%= link_to "Sign in", '#' %></li>
-				</ul> 
-			</nav>
+			<%= render 'layouts/header' %> 
 		</header>
 		<section class="round">
 			<%= yield %> 
 		</section>
-		<%= render 'layouts/_footer' %>
+		<%= render 'layouts/footer' %>
 	</div>
   </body>
 </html>
