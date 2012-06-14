@@ -127,7 +127,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 3.2.3)
   rspec (= 2.4.0)
-  rspec-rails (= 2.4.0)
+  rspec-rails
   sass-rails (~> 3.2.3)
   spork (= 0.8.4)
   sqlite3
